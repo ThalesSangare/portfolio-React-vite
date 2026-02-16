@@ -1,4 +1,10 @@
 const Navbar = () => {
+  const liens = [
+    { nom: "Accueil", href: "#" },
+    { nom: "A Propos", href: "#" },
+    { nom: "Experiences", href: "#" },
+    { nom: "Projets", href: "#" },
+  ];
   return (
     <div className="flex justify-center md:justify-between items-center p-4">
       <a href="#" className="">
@@ -7,10 +13,11 @@ const Navbar = () => {
       </a>
 
       <ul className="hidden md:flex space-x-4">
-        <li>Accueil</li>
-        <li>A Propos</li>
-        <li>Experiences</li>
-        <li>Projets</li>
+        {liens.map((lien) => (
+          <li key={lien.nom}>
+            <a href={lien.href}>{lien.nom}</a>
+          </li>
+        ))}
       </ul>
     </div>
   );
