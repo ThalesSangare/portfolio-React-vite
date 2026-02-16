@@ -1,10 +1,12 @@
 import { LetterText } from "lucide-react";
 import img from "../assets/img.jpg";
+import Title from "./Title";
 
 const Propos = () => {
   return (
-    <div>
-      <h1 className="text-center">A propos</h1>
+    <div className="bg-base-200">
+      {/* <h1 className="text-center mb-10">A propos</h1> */}
+      <Title titreProps="A Propos" />
       <div className="flex justify-center items-center gap-10">
         <div className="hidden md:block">
           {/* mon image */}
