@@ -82,18 +82,24 @@ const Experiences = () => {
 
         <div className="md:ml-4 flex flex-col space-y-4">
           {experiences.map((experience) => (
-            <div key={experience.id} className="flex flex-col bg-base-200 p-5 rounded-xl shadow-lg">
+            <div
+              key={experience.id}
+              className="flex flex-col bg-base-200 p-5 rounded-xl shadow-lg"
+            >
               <div className="flex items-center">
-                <img src={experience.image} alt={experience.company} 
-                className="object-cover h-10 w-10" />
-                <div ml-4>
+                <img
+                  src={experience.image}
+                  alt={experience.company}
+                  className="object-cover h-10 w-10"
+                />
+                <div className="ml-4">
                   <h1 className="text-xl text-accent font-bold">
                     {experience.role},{experience.company}
                   </h1>
-                  <span>{experience.period}</span>
+                  <span className="text-sm">{experience.period}</span>
                 </div>
               </div>
-              <ul>
+              <ul className="list-disc ml-16 mt-2">
                 {experience.description.map((desc, index) => (
                   <div key={index}>{desc}</div>
                 ))}
