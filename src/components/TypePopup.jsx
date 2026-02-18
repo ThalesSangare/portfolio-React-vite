@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Mail, X } from "lucide-react";
+import { Heart, Mail, X } from "lucide-react";
 
-export default function Btn() {
+export default function TypePopup() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -28,14 +28,13 @@ export default function Btn() {
             </button>
 
             <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
-              📩 A Mon Angela
+              📩 A Mon Amour
             </h2>
 
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               T’inquiète, je ne tombe pas facilement… Mais avec toi, je dois
-              avouer que ça devient intéressant. On va dire que j’aime bien voir
-              où ça peut nous mener 😉 <br /> <br />
-              Thales pense a toi Angela ❤️
+              avouer que c'est intéressant.😉 <br /> <br />
+              Thales pense a toi ! <Heart />
             </p>
 
             {/* <div className="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg text-center font-medium">

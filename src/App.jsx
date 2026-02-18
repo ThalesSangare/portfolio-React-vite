@@ -5,12 +5,12 @@ import Navbar from "./components/Navbar";
 import Propos from "./components/Propos";
 import Home from "./components/Home";
 import Projets from "./components/Projets";
-import Btn from "./components/Btn";
+import Btn from "./components/TypePopup";
+import TypePopup from "./components/TypePopup";
 
 function App() {
   return (
     <>
-      <Btn />
       <Navbar />
       <Home />
       <Propos />
