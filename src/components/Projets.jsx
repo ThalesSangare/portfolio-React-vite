@@ -2,72 +2,73 @@ import Title from "./Title";
 
 import img1 from "../assets/projects/1.png";
 import img2 from "../assets/projects/2.png";
-import img3 from "../assets/projects/3.png";
-import img4 from "../assets/projects/4.png";
-import img5 from "../assets/projects/5.png";
+import img3 from "../assets/projects/img_todolist_React.png";
+import img4 from "../assets/projects/img_searchFilm_js.png";
+import img5 from "../assets/projects/img_infoPays_js.png";
+import img6 from "../assets/projects/log.jpg";
 import { Github, Video } from "lucide-react";
 
 const projets = [
   {
     id: 1,
-    titre: "Plateforme E-commerce",
+    titre: "Plateforme E-commerce (En Cours)",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
+    technologies: ["React", "Tailwind css", "Node.js"],
     demoLink: "#",
     repoLink: "#",
-    image: img2,
+    image: img1,
   },
 
   {
     id: 2,
-    titre: "Plateforme E-commerce",
+    titre: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
+    technologies: ["React", "Tailwind css"],
     demoLink: "#",
     repoLink: "#",
     image: img2,
   },
   {
     id: 3,
-    titre: "Plateforme E-commerce",
+    titre: "Plateforme de Todo-List",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
+    technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
     repoLink: "#",
-    image: img2,
+    image: img3,
   },
   {
     id: 4,
-    titre: "Plateforme E-commerce",
+    titre: "Plateforme de Recherche de films",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
+    technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
     repoLink: "#",
-    image: img2,
+    image: img4,
   },
   {
     id: 5,
-    titre: "Plateforme E-commerce",
+    titre: "Informations des pays",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
+    technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
     repoLink: "#",
-    image: img2,
+    image: img5,
   },
   {
     id: 6,
-    titre: "Plateforme E-commerce",
+    titre: "Plateforme de Gestion d'un centre de formation",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
+    technologies: ["Java", "JavaFx", "MySql"],
     demoLink: "#",
     repoLink: "#",
-    image: img2,
+    image: img6,
   },
 ];
 

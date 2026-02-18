@@ -23,11 +23,16 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-base-200 text-base-content py-10 px-4 md:px-20">
+    <footer className="bg-base-200 text-base-content py-10 px-4 md:px-20 mt-5">
       {/* Première ligne : Logo/Nom + Réseaux sociaux */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
         {/* Nom ou logo */}
-        <div className="text-2xl font-bold">Thales</div>
+        <div className="text-2xl font-bold">
+          <a href="#" className="">
+            {/*  logo */}
+            Thales <span className="text-accent">Sangare</span>
+          </a>
+        </div>
 
         {/* Icônes sociales */}
         <ul className="flex gap-6">
