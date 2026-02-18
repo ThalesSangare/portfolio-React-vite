@@ -11,12 +11,14 @@ const Home = () => {
         </h1>
 
         <p className="my-4 text-md text-center md:text-left">
-          Généralement, on utilise un texte en faux latin (le texte ne veut rien
-          dire, il a été modifié), le Lorem ipsum ou Lipsum. L'avantage du latin
-          est que l'opérateur sait au premier coup d'œil que la page contenant
-          ces lignes n'est pas valide et que l'attention du lecteur n'est pas
-          dérangée par le contenu, lui permettant de demeurer concentré sur le
-          seul aspect graphique...
+          Je transforme des idées en réalité numérique, en concevant des
+          solutions innovantes et fonctionnelles pour répondre aux besoins du
+          monde moderne. Spécialisé dans les technologies du web, je m'efforce
+          d'offrir des expériences utilisateurs fluides et engageantes, je mets
+          mes compétences au service de vos projets les plus ambitieux.
+          Passionné par les technologies de pointe, je suis en constante
+          évolution pour rester à la hauteur des dernières tendances du
+          développement web
         </p>
 
         <a href="#" className="btn btn-accent w-fit mx-auto md:mx-0">
