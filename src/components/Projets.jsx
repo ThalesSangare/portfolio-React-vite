@@ -5,6 +5,7 @@ import img2 from "../assets/projects/2.png";
 import img3 from "../assets/projects/3.png";
 import img4 from "../assets/projects/4.png";
 import img5 from "../assets/projects/5.png";
+import { Github, Video } from "lucide-react";
 
 const projets = [
   {
@@ -72,20 +73,33 @@ const projets = [
 
 const Projets = () => {
   return (
-    <div>
+    <div className="mt-10">
       <Title titreProps="Projets" />
-      <div>
+      <div className="grid md:grid-cols-3 gap-4">
         {projets.map((projet) => (
-          <div>
-            <img src={projet.image} alt={projet.titre} />
+          <div className="bg-base-300 p-5 h-fit rounded-xl shadow-lg">
+            <img
+              src={projet.image}
+              alt={projet.titre}
+              className="w-full rounded-xl h-56 object-cover"
+            />
             <div>
-              <h1>{projet.titre}</h1>
-              <p>{projet.description}</p>
+              <h1 className="my-2 font-bold">{projet.titre}</h1>
+              <p className="text-sm">{projet.description}</p>
             </div>
-            <div>
+            <div className="flex flex-wrap gap-2 my-3">
               {projet.technologies.map((tech) => (
-                <span>{tech}</span>
+                <span className="badge badge-accent badge-sm">{tech}</span>
               ))}
+            </div>
+            <div className="flex">
+              <a className="btn btn-accent w-2/3" href={projet.demoLink}>
+                Demo <Video className="w-4" />
+              </a>
+
+              <a className="btn btn-neutral w-1/3 ml-2" href={projet.repoLink}>
+                <Github className="w-4" />
+              </a>
             </div>
           </div>
         ))}
