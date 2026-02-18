@@ -5,10 +5,12 @@ import Navbar from "./components/Navbar";
 import Propos from "./components/Propos";
 import Home from "./components/Home";
 import Projets from "./components/Projets";
+import Btn from "./components/Btn";
 
 function App() {
   return (
     <>
+      <Btn />
       <Navbar />
       <Home />
       <Propos />

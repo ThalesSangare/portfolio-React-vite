@@ -22,7 +22,7 @@ const Propos = () => {
               <LetterText />
             </div>
             <div className="md:ml-4 text-center md-text-left">
-              <h2 className="text-xl font-bold mb-1">Developpeur Front-End</h2>
+              <h2 className="text-xl font-bold mb-1">Développeur Front-End</h2>
               <p>Je suis un développeur frontend avec une bonne expérience.</p>
             </div>
           </div>
@@ -31,8 +31,11 @@ const Propos = () => {
               <LetterText />
             </div>
             <div className="md:ml-4 text-center md-text-left">
-              <h2 className="text-xl font-bold mb-1">Developpeur Front-End</h2>
-              <p>Je suis un développeur frontend avec une bonne expérience.</p>
+              <h2 className="text-xl font-bold mb-1">Développeur Back-End</h2>
+              <p>
+                Développement de la logique serveur, gestion des bases de
+                données et sécurisation des applications web..
+              </p>
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl mb-5">
@@ -40,8 +43,11 @@ const Propos = () => {
               <LetterText />
             </div>
             <div className="md:ml-4 text-center md-text-left">
-              <h2 className="text-xl font-bold mb-1">Developpeur Front-End</h2>
-              <p>Je suis un développeur frontend avec une bonne expérience.</p>
+              <h2 className="text-xl font-bold mb-1">Développeur Full-Stack</h2>
+              <p>
+                Je suis un développeur full-stack avec une bonne expérience en
+                développement d’applications web modernes.
+              </p>
             </div>
           </div>
         </div>
