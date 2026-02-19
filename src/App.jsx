@@ -6,16 +6,28 @@ import Propos from "./components/Propos";
 import Home from "./components/Home";
 import Projets from "./components/Projets";
 import Btn from "./components/TypePopup";
-import TypePopup from "./components/TypePopup";
+import { Route, Routes } from "react-router-dom";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <Propos />
-      <Experiences />
-      <Projets />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Propos />
+              <Experiences />
+              <Projets />
+            </>
+          }
+        />
+
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
 
       <div>
         <Footer />

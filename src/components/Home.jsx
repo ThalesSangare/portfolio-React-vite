@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import img from "../assets/img.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -24,10 +25,10 @@ const Home = () => {
           développement web
         </p>
 
-        <a href="#" className="btn btn-accent w-fit mx-auto md:mx-0">
+        <Link to="/contact" className="btn btn-accent w-fit mx-auto md:mx-0">
           <Mail className="w-5 h-5" />
           Contactez-moi
-        </a>
+        </Link>
       </div>
 
       <div className="flex justify-center">
