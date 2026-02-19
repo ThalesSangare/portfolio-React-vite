@@ -5,3 +5,7 @@
 @plugin "daisyui" {
   themes: night, italia, cyberpunk, dracula, light;
 }
+
+html {
+  scroll-behavior: smooth;
+}
