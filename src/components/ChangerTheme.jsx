@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 function ChangerTheme() {
-  // 1️⃣ On crée un état pour stocker le thème
+  // On crée un état pour stocker le thème
   const [theme, setTheme] = useState("light");
 
-  // 2️⃣ Quand le composant charge
+  //  Quand le composant charge
   useEffect(() => {
     // On regarde si un thème est déjà sauvegardé
     const savedTheme = localStorage.getItem("theme");
@@ -15,7 +15,7 @@ function ChangerTheme() {
     }
   }, []);
 
-  // 3️⃣ Fonction pour changer le thème
+  //  Fonction pour changer le thème
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
 
