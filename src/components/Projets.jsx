@@ -78,7 +78,7 @@ const Projets = () => {
       <Title titreProps="Projets" />
       <div className="grid md:grid-cols-3 gap-4">
         {projets.map((projet) => (
-          <div className="bg-base-300 p-5 h-fit rounded-xl shadow-lg">
+          <div key={projet.id} className="bg-base-300 p-5 h-fit rounded-xl shadow-lg">
             <img
               src={projet.image}
               alt={projet.titre}
@@ -89,8 +89,8 @@ const Projets = () => {
               <p className="text-sm">{projet.description}</p>
             </div>
             <div className="flex flex-wrap gap-2 my-3">
-              {projet.technologies.map((tech) => (
-                <span className="badge badge-accent badge-sm">{tech}</span>
+              {projet.technologies.map((tech,index) => (
+                <span key={index} className="badge badge-accent badge-sm">{tech}</span>
               ))}
             </div>
             <div className="flex">

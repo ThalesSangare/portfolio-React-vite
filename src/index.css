@@ -1,4 +1,7 @@
 @import "tailwindcss";
+
+@plugin "daisyui";
+
 @plugin "daisyui" {
-  theme: night;
+  themes: night, italia, cyberpunk, dracula, light;
 }
