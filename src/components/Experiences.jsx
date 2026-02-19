@@ -4,6 +4,9 @@ import imgREACT from "../assets/techno/react.png";
 import imgHTML from "../assets/techno/html.png";
 import imgNODE from "../assets/techno/node-js.png";
 import imgTAILWIND from "../assets/techno/tailwind.png";
+import imgDaisyui from "../assets/techno/daisyui.png";
+import imgGithub from "../assets/techno/github.svg";
+import imgSql from "../assets/techno/sql.webp";
 
 import google from "../assets/companies/google.png";
 import meta from "../assets/companies/meta.webp";
@@ -18,6 +21,9 @@ const skills = [
   { id: 4, nom: "React", image: imgREACT },
   { id: 5, nom: "Node.js", image: imgNODE },
   { id: 6, nom: "Tailwind CSS", image: imgTAILWIND },
+  { id: 7, nom: "Daisyui", image: imgDaisyui },
+  { id: 8, nom: "Github", image: imgGithub },
+  { id: 9, nom: "Sal", image: imgSql },
 ];
 
 // Mes experiences aussi pareil
@@ -59,7 +65,7 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div id="Experiences">
+    <div id="experiences">
       <Title titreProps="Experiences" />
       <div className="flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 mt-4 md:mt-0">

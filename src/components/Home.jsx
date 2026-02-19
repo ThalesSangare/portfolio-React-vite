@@ -3,7 +3,10 @@ import img from "../assets/img.jpg";
 
 const Home = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10 gap-10">
+    <div
+      id="accueil"
+      className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10 gap-10"
+    >
       <div className="flex flex-col md:max-w-xl px-4 md:px-">
         {/* px => ajoute padding horizontal */}
         <h1 className="text-5xl md:text-6xl font-bold text-center md:text-left mt-4 md:mt-0">

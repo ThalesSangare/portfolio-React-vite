@@ -74,7 +74,7 @@ const projets = [
 
 const Projets = () => {
   return (
-    <div className="mt-10">
+    <div id="projets" className="mt-10">
       <Title titreProps="Projets" />
       <div className="grid md:grid-cols-3 gap-4">
         {projets.map((projet) => (

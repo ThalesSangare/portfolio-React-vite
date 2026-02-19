@@ -4,7 +4,7 @@ import Title from "./Title";
 
 const Propos = () => {
   return (
-    <div className="bg-base-200">
+    <div id="propos" className="bg-base-200">
       {/* <h1 className="text-center mb-10">A propos</h1> */}
       <Title titreProps="A Propos" />
       <div className="flex justify-center items-center gap-10">

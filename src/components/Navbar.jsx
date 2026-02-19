@@ -6,10 +6,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // ✅ état du menu
 
   const liens = [
-    { nom: "Accueil", href: "#" },
-    { nom: "A Propos", href: "#" },
-    { nom: "Experiences", href: "#" },
-    { nom: "Projets", href: "#" },
+    { nom: "Accueil", href: "#accueil" },
+    { nom: "A Propos", href: "#propos" },
+    { nom: "Experiences", href: "#experiences" },
+    { nom: "Projets", href: "#projets" },
   ];
   return (
     <div className="flex justify-center md:justify-between items-center p-4">
