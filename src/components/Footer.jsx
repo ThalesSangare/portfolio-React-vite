@@ -1,8 +1,19 @@
-import { Facebook, Instagram, Github, Linkedin, Braces } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Github,
+  Linkedin,
+  Braces,
+  MessageCircleReply,
+} from "lucide-react";
 
 const Footer = () => {
   // Liens sociaux
   const socialLinks = [
+    {
+      icon: <MessageCircleReply />,
+      url: "https://wa.me/message/BBELNUB64XCIC1",
+    },
     {
       icon: <Facebook size={24} />,
       url: "https://www.facebook.com/kabinetsangare1",

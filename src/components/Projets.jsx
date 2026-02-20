@@ -27,7 +27,7 @@ const projets = [
       "Portfolio développé avec React et TailwindCSS. Objectifs : - Présentation de mes compétences et projets - Navigation dynamique avec React Router -Design responsive et moderne - Mise en pratique des bonnes pratiques en développement front-end. Projet vitrine reflétant mes compétences en développement front-end.",
     technologies: ["React", "Tailwind css"],
     demoLink: "#",
-    repoLink: "#",
+    repoLink: "https://github.com/ThalesSangare/portfolio-React-vite",
     image: img2,
   },
   {
@@ -37,7 +37,7 @@ const projets = [
       "Application web interactive développée en JavaScript. Fonctionnalités : - Ajout de tâches avec niveaux de priorité (Urgente, Moyenne, Faible) - Suppression de tâches - Marquage des tâches comme terminées - Filtrage des tâches selon leur priorité . Projet mettant en pratique la gestion d’état et la logique conditionnelle côté front-end.",
     technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
-    repoLink: "#",
+    repoLink: "https://github.com/ThalesSangare/todoList-en-React/",
     image: img3,
   },
   {
@@ -47,7 +47,7 @@ const projets = [
       "Application web développée en JavaScript avec intégration d’API. Fonctionnalités : - Recherche dynamique de films par titre - Affichage des résultats en temps réel - Présentation des informations détaillées des films . Projet axé sur l’utilisation d’API et la manipulation du DOM.",
     technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
-    repoLink: "#",
+    repoLink: "https://github.com/ThalesSangare/RechercheFilm-api-js",
     image: img4,
   },
   {
@@ -57,7 +57,7 @@ const projets = [
       "Application web développée en JavaScript utilisant une API externe. Permet à l’utilisateur : De rechercher un pays par son nom - D’afficher ses informations principales (capitale, population, drapeau, etc.) Projet réalisé pour maîtriser la consommation d’API REST et le traitement des données JSON.",
     technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
-    repoLink: "#",
+    repoLink: "https://github.com/ThalesSangare/rest-api-country-search/",
     image: img5,
   },
   {
@@ -103,7 +103,11 @@ const Projets = () => {
                 Demo <Video className="w-4" />
               </a>
 
-              <a className="btn btn-neutral w-1/3 ml-2" href={projet.repoLink}>
+              <a
+                target="_blank"
+                className="btn btn-neutral w-1/3 ml-2"
+                href={projet.repoLink}
+              >
                 <Github className="w-4" />
               </a>
             </div>
