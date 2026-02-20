@@ -3,7 +3,7 @@
 @plugin "daisyui";
 
 @plugin "daisyui" {
-  themes: night, italia, Dark, dracula, light;
+  themes: night, italia, dark, dracula, light;
 }
 
 html {
