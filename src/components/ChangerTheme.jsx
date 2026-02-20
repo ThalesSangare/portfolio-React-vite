@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function ChangerTheme() {
   // On crée un état pour stocker le thème
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   //  Quand le composant charge
   useEffect(() => {

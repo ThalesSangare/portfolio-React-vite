@@ -11,7 +11,7 @@ const Footer = () => {
   // Liens sociaux
   const socialLinks = [
     {
-      icon: <MessageCircleReply />,
+      icon: <MessageCircleReply/>,
       url: "https://wa.me/message/BBELNUB64XCIC1",
     },
     {
