@@ -1,4 +1,4 @@
-import { LetterText } from "lucide-react";
+import { Braces, Code, CodeXml, LetterText } from "lucide-react";
 import img from "../assets/img.jpg";
 import Title from "./Title";
 
@@ -19,7 +19,7 @@ const Propos = () => {
         <div>
           <div className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl mb-5">
             <div className="mb-2 md:mb-0">
-              <LetterText />
+              <CodeXml />
             </div>
             <div className="md:ml-4 text-center md-text-left">
               <h2 className="text-xl font-bold mb-1">Développeur Front-End</h2>
@@ -28,7 +28,7 @@ const Propos = () => {
           </div>
           <div className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl mb-5">
             <div className="mb-2 md:mb-0">
-              <LetterText />
+              <Braces />
             </div>
             <div className="md:ml-4 text-center md-text-left">
               <h2 className="text-xl font-bold mb-1">Développeur Back-End</h2>
@@ -40,7 +40,7 @@ const Propos = () => {
           </div>
           <div className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl mb-5">
             <div className="mb-2 md:mb-0">
-              <LetterText />
+              <Code />
             </div>
             <div className="md:ml-4 text-center md-text-left">
               <h2 className="text-xl font-bold mb-1">Développeur Full-Stack</h2>
