@@ -8,7 +8,7 @@ import imgDaisyui from "../assets/techno/daisyui.png";
 import imgGithub from "../assets/techno/github.svg";
 import imgSql from "../assets/techno/sql.webp";
 
-import ist from "../assets/companies/ist.jpg";
+// import ist from "../assets/companies/ist.jpg";
 import code from "../assets/companies/code.png";
 import Title from "./Title";
 
