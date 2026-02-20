@@ -8,9 +8,8 @@ import imgDaisyui from "../assets/techno/daisyui.png";
 import imgGithub from "../assets/techno/github.svg";
 import imgSql from "../assets/techno/sql.webp";
 
-import google from "../assets/companies/google.png";
-import meta from "../assets/companies/meta.webp";
-import amazon from "../assets/companies/amazon.png";
+import ist from "../assets/companies/ist.jpg";
+import code from "../assets/companies/code.png";
 import Title from "./Title";
 
 // Mes competence en Tableau d'object
@@ -30,36 +29,35 @@ const skills = [
 const experiences = [
   {
     id: 1,
-    role: "Software Engineer",
-    company: "Google",
-    period: "Sep 2022 - Présent",
+    role: "Développeur d'Application Desktop (Projet de fin d’études)",
+    period: "Juillet 2023 - Juillet 2024",
     description: [
-      "Développement de nouvelles fonctionnalités pour Google Maps.",
-      "Optimisation des performances de l'application.",
+      "Institut Supérieur de Technologie de Mamou (IST/M) Guinée",
+      "Développement d’une application de gestion de clinique en équipe de 4 personnes.",
+      "Conception de la base de données avec MySQL pour stocker les informations.",
+      "Responsabilités :",
+
+      " - Conception et modélisation de la base de données",
+      " - Développement des fonctionnalités principales de l’application en utilisant Java et JavaFX.",
+      " - Collaboration en équipe avec répartition des tâches",
+      " - Participation aux réunions techniques pour assurer la cohérence du projet",
     ],
-    image: google,
+    image: ist,
   },
   {
     id: 2,
-    role: "Fullstack Developer",
-    company: "Meta",
-    period: "Jan 2021 - Août 2022",
+    role: "Développeur Web – Projets personnels",
+    period: "2024 – Présent",
     description: [
-      "Création d'une plateforme interne de collaboration pour les équipes.",
-      "Mise en place d'une architecture scalable et optimisée.",
+      "Développement d’applications web dans le cadre de ma formation et de projets personnels.",
+      "Création de sites web interactifs en utilisant HTML, CSS, JavaScript et React.",
+      "Mise en œuvre de fonctionnalités avancées telles que l’authentification, la gestion d’état et l’intégration d’API.",
+      "Conception d’interfaces web modernes avec React et TailwindCSS :",
+      "- Création de composants réutilisables.",
+      "- Mise en place d’un système de navigation dynamique.",
+      "- Optimisation responsive pour mobile et desktop.",
     ],
-    image: meta,
-  },
-  {
-    id: 3,
-    role: "Frontend Developer",
-    company: "Amazon",
-    period: "Mai 2019 - Déc 2020",
-    description: [
-      "Développement d'une interface utilisateur pour Amazon Web Services.",
-      "Implémentation des tests unitaires et E2E.",
-    ],
-    image: amazon,
+    image: code,
   },
 ];
 
@@ -95,12 +93,11 @@ const Experiences = () => {
               <div className="flex items-center">
                 <img
                   src={experience.image}
-                  alt={experience.company}
-                  className="object-cover h-10 w-10"
+                  className="object-cover rounded-full h-10 w-10"
                 />
                 <div className="ml-4">
                   <h1 className="text-xl text-accent font-bold">
-                    {experience.role},{experience.company}
+                    {experience.role}
                   </h1>
                   <span className="text-sm">{experience.period}</span>
                 </div>
