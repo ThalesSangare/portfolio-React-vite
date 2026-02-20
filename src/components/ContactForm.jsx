@@ -35,11 +35,11 @@ export default function ContactForm() {
 
   return (
     // Conteneur principal centré verticalement et horizontalement
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+    <div className="min-h-screen flex items-center justify-center  p-4">
       {/* Formulaire */}
       <form
         onSubmit={handleSubmit} // Appelle handleSubmit quand on clique sur envoyer
-        className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md"
+        className=" p-8 rounded-2xl shadow-2xl w-full max-w-md"
       >
         {/* Titre */}
         <h2 className="text-2xl font-bold text-center mb-6">
@@ -56,7 +56,7 @@ export default function ContactForm() {
             onChange={handleChange} // Détecte les changements
             required
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Ex: Thales Dupont"
+            placeholder="Ex: Hawa Sangare"
           />
         </div>
 
@@ -70,7 +70,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="exemple@email.com"
+            placeholder="exemple@gmail.com"
           />
         </div>
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
         {/* Bouton d'envoi */}
         <button
           type="submit" // Déclenche le submit du formulaire
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+          className="btn bg-blue-600 w-full text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
         >
           Envoyer
         </button>
