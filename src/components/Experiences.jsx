@@ -42,7 +42,7 @@ const experiences = [
       " - Collaboration en équipe avec répartition des tâches",
       " - Participation aux réunions techniques pour assurer la cohérence du projet",
     ],
-    image: ist,
+    image: code,
   },
   {
     id: 2,
