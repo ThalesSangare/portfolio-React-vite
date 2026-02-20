@@ -3,23 +3,27 @@ import { Facebook, Instagram, Github, Linkedin } from "lucide-react";
 const Footer = () => {
   // Liens sociaux
   const socialLinks = [
-    { icon: <Facebook size={24} />, url: "https://www.facebook.com/tonprofil" },
+    {
+      icon: <Facebook size={24} />,
+      url: "https://www.facebook.com/kabinetsangare1",
+    },
     {
       icon: <Instagram size={24} />,
-      url: "https://www.instagram.com/tonprofil",
+      url: "https://www.instagram.com/i.am_thales7",
     },
-    { icon: <Github size={24} />, url: "https://github.com/tonprofil" },
+    { icon: <Github size={24} />, url: "https://github.com/ThalesSangare" },
     {
       icon: <Linkedin size={24} />,
-      url: "https://www.linkedin.com/in/tonprofil",
+      url: "https://www.linkedin.com/in/kabine-sangare-2421b134b",
     },
   ];
 
   // Liens navigation rapide
   const navLinks = [
-    { nom: "À propos", href: "#about" },
-    { nom: "Projets", href: "#projects" },
-    { nom: "Contact", href: "#contact" },
+    { nom: "Accueil", id: "accueil" },
+    { nom: "À propos", id: "propos" },
+    { nom: "Experiences", id: "experiences" },
+    { nom: "Projets", id: "projets" },
   ];
 
   return (
@@ -56,7 +60,7 @@ const Footer = () => {
         {navLinks.map((link, index) => (
           <a
             key={index}
-            href={link.href}
+            href={location.pathname === "/" ? `#${link.id}` : `/#${link.id}`}
             className="hover:text-accent transition-colors font-medium"
           >
             {link.nom}
@@ -66,7 +70,7 @@ const Footer = () => {
 
       {/* Troisième ligne : Copyright */}
       <div className="border-t border-base-300 pt-4 text-center">
-        <p className="text-sm">&copy; 2026 Thales. Tous droits réservés.</p>
+        <p className="text-sm">&copy; 2026 Sangare. Tous droits réservés.</p>
       </div>
     </footer>
   );
