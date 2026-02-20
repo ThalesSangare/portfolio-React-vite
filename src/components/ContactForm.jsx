@@ -1,36 +1,52 @@
-// On importe React et le hook useState
 import React, { useState } from "react";
+import Swal from "sweetalert2";
+// Permet de rediriger vers une autre page
+import { useNavigate } from "react-router-dom";
 
 // On crée notre composant
 export default function ContactForm() {
-  // useState permet de stocker les données du formulaire
-  const [formData, setFormData] = useState({
-    nom: "", // Champ Nom & Prénom
-    email: "", // Champ Email
-    message: "", // Champ Message
-  });
+  const [result, setResult] = useState("");
+  // Hook de navigation React Router
+  const navigate = useNavigate();
 
-  // Fonction qui s'exécute à chaque modification d'un champ
-  const handleChange = (e) => {
-    setFormData({
-      ...formData, // On garde les anciennes valeurs
-      [e.target.name]: e.target.value, // On met à jour uniquement le champ modifié
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "87259c31-6100-48b7-bc89-07de9941de44");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
     });
-  };
 
-  // Fonction appelée lors de l'envoi du formulaire
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Empêche le rechargement de la page
-
-    console.log(formData); // Affiche les données dans la console
-    alert("Message envoyé !"); // Message de confirmation
-
-    // Réinitialisation du formulaire après envoi
-    setFormData({
-      nom: "",
-      email: "",
-      message: "",
-    });
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+    if (data.success) {
+      Swal.fire({
+        title: "Message envoyé avec succès!",
+        text: "Merci de m'avoir contacté. Je vous répondrai dès que possible.",
+        icon: "success",
+        confirmButtonText: "Fermer",
+      }).then((result) => {
+        // Quand l'utilisateur clique sur "Fermer"
+        if (result.isConfirmed) {
+          navigate("/"); // Redirige vers la page d'accueil
+        }
+      });
+    }
+    if (!data.success) {
+      Swal.fire({
+        title: "Erreur lors de l'envoi du message",
+        text: "Une erreur est survenue. Veuillez réessayer plus tard.",
+        icon: "error",
+        confirmButtonText: "Fermer",
+      }).then((result) => {
+        // Quand l'utilisateur clique sur "Fermer"
+        if (result.isConfirmed) {
+          navigate("/"); // Redirige vers la page d'accueil
+        }
+      });
+    }
   };
 
   return (
@@ -38,7 +54,7 @@ export default function ContactForm() {
     <div className="min-h-screen flex items-center justify-center  p-4">
       {/* Formulaire */}
       <form
-        onSubmit={handleSubmit} // Appelle handleSubmit quand on clique sur envoyer
+        onSubmit={onSubmit} // Appelle handleSubmit quand on clique sur envoyer
         className=" p-8 rounded-2xl shadow-2xl w-full max-w-md"
       >
         {/* Titre */}
@@ -52,8 +68,8 @@ export default function ContactForm() {
           <input
             type="text"
             name="nom" // Doit correspondre à la clé dans formData
-            value={formData.nom} // Valeur contrôlée par React
-            onChange={handleChange} // Détecte les changements
+            // value={formData.nom}  Valeur contrôlée par React
+            // onChange={handleChange}  Détecte les changements
             required
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Ex: Hawa Sangare"
@@ -66,8 +82,6 @@ export default function ContactForm() {
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             required
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="exemple@gmail.com"
@@ -79,8 +93,6 @@ export default function ContactForm() {
           <label className="block text-sm font-medium mb-1">Message</label>
           <textarea
             name="message"
-            value={formData.message}
-            onChange={handleChange}
             required
             rows="4"
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -93,6 +105,7 @@ export default function ContactForm() {
           type="submit" // Déclenche le submit du formulaire
           className="btn bg-blue-600 w-full text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
         >
+          {" "}
           Envoyer
         </button>
       </form>
