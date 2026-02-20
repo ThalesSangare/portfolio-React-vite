@@ -13,7 +13,7 @@ const projets = [
     id: 1,
     titre: "Plateforme E-commerce (En Cours)",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+      "Application web e-commerce en cours de développement. Fonctionnalités prévues / en cours : - Gestion des produits - Système d’authentification utilisateur - Gestion du panier - Système de commandes - Interface administrateur. Projet complet visant à maîtriser la logique métier et l’intégration back-end.",
     technologies: ["React", "Tailwind css", "Node.js"],
     demoLink: "#",
     repoLink: "#",
@@ -24,7 +24,7 @@ const projets = [
     id: 2,
     titre: "Portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+      "Portfolio développé avec React et TailwindCSS. Objectifs : - Présentation de mes compétences et projets - Navigation dynamique avec React Router -Design responsive et moderne - Mise en pratique des bonnes pratiques en développement front-end. Projet vitrine reflétant mes compétences en développement front-end.",
     technologies: ["React", "Tailwind css"],
     demoLink: "#",
     repoLink: "#",
@@ -34,7 +34,7 @@ const projets = [
     id: 3,
     titre: "Plateforme de Todo-List",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+      "Application web interactive développée en JavaScript. Fonctionnalités : - Ajout de tâches avec niveaux de priorité (Urgente, Moyenne, Faible) - Suppression de tâches - Marquage des tâches comme terminées - Filtrage des tâches selon leur priorité . Projet mettant en pratique la gestion d’état et la logique conditionnelle côté front-end.",
     technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
     repoLink: "#",
@@ -44,7 +44,7 @@ const projets = [
     id: 4,
     titre: "Plateforme de Recherche de films",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+      "Application web développée en JavaScript avec intégration d’API. Fonctionnalités : - Recherche dynamique de films par titre - Affichage des résultats en temps réel - Présentation des informations détaillées des films . Projet axé sur l’utilisation d’API et la manipulation du DOM.",
     technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
     repoLink: "#",
@@ -54,7 +54,7 @@ const projets = [
     id: 5,
     titre: "Informations des pays",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+      "Application web développée en JavaScript utilisant une API externe. Permet à l’utilisateur : De rechercher un pays par son nom - D’afficher ses informations principales (capitale, population, drapeau, etc.) Projet réalisé pour maîtriser la consommation d’API REST et le traitement des données JSON.",
     technologies: ["HTML", "JavaScript", "CSS"],
     demoLink: "#",
     repoLink: "#",
@@ -64,7 +64,7 @@ const projets = [
     id: 6,
     titre: "Plateforme de Gestion d'un centre de formation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur",
+      "Application desktop développée en Java avec JavaFX, permettant la gestion complète d’un centre de formation.Fonctionnalités principales : Gestion des inscriptions des apprenants - Gestion des cours et des formateurs - Suivi des paiements - Gestion des notes et évaluations .",
     technologies: ["Java", "JavaFx", "MySql"],
     demoLink: "#",
     repoLink: "#",
