@@ -23,7 +23,7 @@ const skills = [
   { id: 6, nom: "Tailwind CSS", image: imgTAILWIND },
   { id: 7, nom: "Daisyui", image: imgDaisyui },
   { id: 8, nom: "Github", image: imgGithub },
-  { id: 9, nom: "Sal", image: imgSql },
+  { id: 9, nom: "Sql", image: imgSql },
 ];
 
 // Mes experiences aussi pareil

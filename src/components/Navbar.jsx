@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ChangerTheme from "./ChangerTheme";
-import { Menu } from "lucide-react";
+import { Braces, Menu } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
   return (
     <div className="flex justify-center md:justify-between items-center p-4">
-      <a href="#" className="">
-        {/*  logo */}
+      <a href="#" className="flex items-center gap-2 text-xl font-bold">
+        <Braces className="text-accent" />
         Thales <span className="text-accent">Sangare</span>
       </a>
 

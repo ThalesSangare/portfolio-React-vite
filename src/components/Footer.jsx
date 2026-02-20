@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Github, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Github, Linkedin, Braces } from "lucide-react";
 
 const Footer = () => {
   // Liens sociaux
@@ -32,8 +32,8 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
         {/* Nom ou logo */}
         <div className="text-2xl font-bold">
-          <a href="#" className="">
-            {/*  logo */}
+          <a href="#" className="flex items-center gap-2">
+            <Braces className="text-accent" />
             Thales <span className="text-accent">Sangare</span>
           </a>
         </div>
