@@ -35,7 +35,7 @@ const projets = [
     titre: "Plateforme de Todo-List",
     description:
       "Application web interactive développée en JavaScript. Fonctionnalités : - Ajout de tâches avec niveaux de priorité (Urgente, Moyenne, Faible) - Suppression de tâches - Marquage des tâches comme terminées - Filtrage des tâches selon leur priorité . Projet mettant en pratique la gestion d’état et la logique conditionnelle côté front-end.",
-    technologies: ["HTML", "JavaScript", "CSS"],
+    technologies: ["React", "Tailwind css"],
     demoLink: "#",
     repoLink: "https://github.com/ThalesSangare/todoList-en-React/",
     image: img3,

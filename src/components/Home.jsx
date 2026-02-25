@@ -11,7 +11,7 @@ const Home = () => {
       <div className="flex flex-col md:max-w-xl px-4 md:px-">
         {/* px => ajoute padding horizontal */}
         <h1 className="text-5xl md:text-6xl font-bold text-center md:text-left mt-4 md:mt-0">
-          Bonjour , <br /> je suis <span className="text-accent">Thales</span>
+          Bonjour , <br /> je suis <span className="text-accent">Sangare</span>
         </h1>
 
         <p className="my-4 text-md text-center md:text-left">

@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="flex justify-center md:justify-between items-center p-4">
       <a href="#" className="flex items-center gap-2 text-xl font-bold">
         <Braces className="text-accent" />
-        Thales <span className="text-accent">Sangare</span>
+        Kabine <span className="text-accent">Sangare</span>
       </a>
 
       <ul className="hidden md:flex space-x-4">
