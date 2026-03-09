@@ -15,8 +15,8 @@ const projets = [
     description:
       "Application web e-commerce en cours de développement. Fonctionnalités prévues / en cours : - Gestion des produits - Système d’authentification utilisateur - Gestion du panier - Système de commandes - Interface administrateur. Projet complet visant à maîtriser la logique métier et l’intégration back-end.",
     technologies: ["React", "Tailwind css", "Node.js"],
-    demoLink: "#",
-    repoLink: "#",
+    demoLink: "https://ecommerce-prototype.pages.dev/",
+    repoLink: "https://github.com/ThalesSangare/Projet_Ecommerce",
     image: img1,
   },
 
@@ -99,7 +99,11 @@ const Projets = () => {
               ))}
             </div>
             <div className="flex">
-              <a className="btn btn-accent w-2/3" href={projet.demoLink}>
+              <a
+                className="btn btn-accent w-2/3"
+                href={projet.demoLink}
+                target="_blank"
+              >
                 Demo <Video className="w-4" />
               </a>
 
