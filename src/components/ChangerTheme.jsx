@@ -29,7 +29,7 @@ function ChangerTheme() {
   return (
     <div className="md:flex bg-base-200 items-center justify-center">
       <button onClick={toggleTheme} className="btn btn-primary">
-        {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+        {theme === "light" ? "🌙 " : "☀️ "}
       </button>
     </div>
   );
