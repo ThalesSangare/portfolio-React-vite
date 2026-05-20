@@ -2,6 +2,7 @@ import { useState } from "react";
 import ChangerTheme from "./ChangerTheme";
 import { Braces, Menu } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import cv from "../assets/doc/CV_Kabine.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); //  état du menu
@@ -12,7 +13,7 @@ const Navbar = () => {
     { nom: "A Propos", id: "propos" },
     { nom: "Experiences", id: "experiences" },
     { nom: "Projets", id: "projets" },
-    { nom: "CV", pdf: "./CV_Kabine.pdf" },
+    { nom: "CV", pdf: cv },
   ];
   return (
     <div className="flex justify-center md:justify-between items-center p-4">
