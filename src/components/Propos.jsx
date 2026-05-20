@@ -45,8 +45,9 @@ const Propos = () => {
             <div className="md:ml-4 text-center md-text-left">
               <h2 className="text-xl font-bold mb-1">Développeur Full-Stack</h2>
               <p>
-                Je suis un développeur full-stack avec une bonne expérience en
-                développement d’applications web modernes.
+                J’apprends continuellement les technologies du développement web
+                afin de devenir développeur full-stack. Je développe mes
+                compétences à travers des projets concrets.
               </p>
             </div>
           </div>

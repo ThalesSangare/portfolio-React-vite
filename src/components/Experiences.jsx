@@ -2,7 +2,7 @@ import imgCSS from "../assets/techno/css.png";
 import imgJS from "../assets/techno/js.png";
 import imgREACT from "../assets/techno/react.png";
 import imgHTML from "../assets/techno/html.png";
-import imgNODE from "../assets/techno/node-js.png";
+import imgBootstrap from "../assets/techno/bootstrap.webp";
 import imgTAILWIND from "../assets/techno/tailwind.png";
 import imgDaisyui from "../assets/techno/daisyui.png";
 import imgGithub from "../assets/techno/github.svg";
@@ -18,7 +18,7 @@ const skills = [
   { id: 2, nom: "CSS", image: imgCSS },
   { id: 3, nom: "JavaScript", image: imgJS },
   { id: 4, nom: "React", image: imgREACT },
-  { id: 5, nom: "Node.js", image: imgNODE },
+  { id: 5, nom: "Bootstrap", image: imgBootstrap },
   { id: 6, nom: "Tailwind CSS", image: imgTAILWIND },
   { id: 7, nom: "Daisyui", image: imgDaisyui },
   { id: 8, nom: "Github", image: imgGithub },
