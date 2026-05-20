@@ -12,6 +12,7 @@ const Navbar = () => {
     { nom: "A Propos", id: "propos" },
     { nom: "Experiences", id: "experiences" },
     { nom: "Projets", id: "projets" },
+    { nom: "CV", pdf: "/src/doc/CV_Kabine.pdf" },
   ];
   return (
     <div className="flex justify-center md:justify-between items-center p-4">
@@ -24,7 +25,15 @@ const Navbar = () => {
         {liens.map((lien) => (
           <li key={lien.nom}>
             <a
-              href={location.pathname === "/" ? `#${lien.id}` : `/#${lien.id}`}
+              href={
+                lien.pdf
+                  ? lien.pdf
+                  : location.pathname === "/"
+                    ? `#${lien.id}`
+                    : `/#${lien.id}`
+              }
+              target={lien.pdf ? "_blank" : ""}
+              rel={lien.pdf ? "noopener noreferrer" : ""}
               className="hover:text-accent"
             >
               {lien.nom}
@@ -53,7 +62,15 @@ const Navbar = () => {
           {liens.map((lien) => (
             <a
               key={lien.nom}
-              href={location.pathname === "/" ? `#${lien.id}` : `/#${lien.id}`}
+              href={
+                lien.pdf
+                  ? lien.pdf
+                  : location.pathname === "/"
+                    ? `#${lien.id}`
+                    : `/#${lien.id}`
+              }
+              target={lien.pdf ? "_blank" : ""}
+              rel={lien.pdf ? "noopener noreferrer" : ""}
               className="hover:text-accent"
             >
               {lien.nom}
