@@ -12,7 +12,7 @@ const Navbar = () => {
     { nom: "A Propos", id: "propos" },
     { nom: "Experiences", id: "experiences" },
     { nom: "Projets", id: "projets" },
-    { nom: "CV", pdf: "/CV_Kabine.pdf" },
+    { nom: "CV", pdf: "./CV_Kabine.pdf" },
   ];
   return (
     <div className="flex justify-center md:justify-between items-center p-4">
