@@ -16,7 +16,8 @@ const Navbar = () => {
     { nom: "CV", pdf: cv },
   ];
   return (
-    <div className="flex justify-center md:justify-between items-center p-4">
+    <div className="fixed top-0 left-0 w-full z-50 flex justify-center md:justify-between items-center p-4 bg-base-100">
+    {/* <div className="flex justify-center md:justify-between items-center p-4"> */}
       <a href="#" className="flex items-center gap-2 text-xl font-bold">
         <Braces className="text-accent" />
         Kabine <span className="text-accent">Sangare</span>
