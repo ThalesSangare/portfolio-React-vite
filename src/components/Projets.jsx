@@ -46,7 +46,7 @@ const projets = [
       "GHA — Site vitrine pour une entreprise d'hygiène et d'assainissement",
     description:
       "Site vitrine one-page développé en React, Vite et Tailwind CSS pour GBEREDOU Hygiène et Assainissement (Guinée). Formulaire de contact fonctionnel (EmailJS), optimisation SEO complète (métadonnées, Open Graph, sitemap, indexation Google), déployé sur Vercel.",
-    technologies: ["HTML", "JavaScript", "CSS"],
+    technologies: ["React", "Vite", "TailwindCss", "EmailJS", "SEO", "Vercel"],
     demoLink: "https://ghaguinee.vercel.app/",
     repoLink: "https://github.com/ThalesSangare/entreprise-hygiene",
     image: img4,
