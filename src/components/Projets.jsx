@@ -3,7 +3,7 @@ import Title from "./Title";
 import img1 from "../assets/projects/1.png";
 import img2 from "../assets/projects/2.png";
 import img3 from "../assets/projects/img_todolist_React.png";
-import img4 from "../assets/projects/img_searchFilm_js.png";
+import img4 from "../assets/projects/gha-image.png";
 import img5 from "../assets/projects/img_infoPays_js.png";
 import img6 from "../assets/projects/log.jpg";
 import { Github, Video } from "lucide-react";
@@ -42,12 +42,13 @@ const projets = [
   },
   {
     id: 4,
-    titre: "Plateforme de Recherche de films",
+    titre:
+      "GHA — Site vitrine pour une entreprise d'hygiène et d'assainissement",
     description:
-      "Application web développée en JavaScript avec intégration d’API. Fonctionnalités : - Recherche dynamique de films par titre - Affichage des résultats en temps réel - Présentation des informations détaillées des films . Projet axé sur l’utilisation d’API et la manipulation du DOM.",
+      "Site vitrine one-page développé en React, Vite et Tailwind CSS pour GBEREDOU Hygiène et Assainissement (Guinée). Formulaire de contact fonctionnel (EmailJS), optimisation SEO complète (métadonnées, Open Graph, sitemap, indexation Google), déployé sur Vercel.",
     technologies: ["HTML", "JavaScript", "CSS"],
-    demoLink: "#",
-    repoLink: "https://github.com/ThalesSangare/RechercheFilm-api-js",
+    demoLink: "https://ghaguinee.vercel.app/",
+    repoLink: "https://github.com/ThalesSangare/entreprise-hygiene",
     image: img4,
   },
   {
